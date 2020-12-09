@@ -1,0 +1,24 @@
+{
+  "name": "datingaim",
+  "version": "1.0.0",
+  "description": "Gamefied dating app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/el7/datingAim.git"
+  },
+  "keywords": [
+    "node",
+    "restful",
+    "api"
+  ],
+  "author": "kevin bergman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/el7/datingAim/issues"
+  },
+  "homepage": "https://github.com/el7/datingAim#readme"
+}
