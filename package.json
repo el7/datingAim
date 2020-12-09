@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/el7/datingAim/issues"
   },
-  "homepage": "https://github.com/el7/datingAim#readme"
+  "homepage": "https://github.com/el7/datingAim#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
