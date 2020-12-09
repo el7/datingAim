@@ -10,7 +10,13 @@ const mongoose = require('mongoose');
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 
-mongoose.connect('mongodb+srv://dbBergmank:' + ${process.env.MONGO_ATLAS_PW} + '@cluster0.ssk8u.mongodb.net/<dbname>?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://dbBergmank:' + process.env.MONGO_ATLAS_PW + '@cluster0.ssk8u.mongodb.net/<dbname>?retryWrites=true&w=majority',
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+        //        useMongoClient: true
+    }
+);
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({
