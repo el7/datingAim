@@ -9,8 +9,15 @@ router.get('/', (req, res, next) => {
 });
 
 router.post('/', (req, res, next) => {
-    res.status(200).json({
-        message: 'HJandling POST req to /products'
+
+    const product = {
+        name: req.body.name,
+        price: req.bodyprice
+    };
+
+    res.status(201).json({
+        message: 'HJandling POST req to /products',
+        createdProduct: product
     });
 });
 
